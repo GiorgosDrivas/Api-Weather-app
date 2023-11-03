@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex flex-column justify-content-end align-items-end mt-4">
+                    <div class="position-relative">
+                        <input id="input" type="text" placeholder="Enter text">
+                        <button id="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="wrap d-flex justify-content-center align-items-center position-relative">
+                    <div class="result">
+                        <h2 id="result_name" class="mb-5 text-center"></h2>
+                        <div class="text-center d-flex align-items-center">
+                            <img src="" alt="" class="weather_icon d-none" />
+                            <p class="d-inline-block m-0 temperature" id="result_temp"></p>
+                        </div>
+                        <div class="single-detail-wrapper mt-5">
+                            <p class="m-0 text-center" id="brief"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="my-5 day_wrapper">
+                    <div id="tomorrow" class="px-4 d-flex flex-row justify-content-between align-items-center">
+                        <p class="date"></p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img id="tomorrowIcon" src="" alt="" class="forecast_weather_icon d-none" />
+                            <p class="details"></p>
+                        </div>
+                    </div>
+                    <div id="third_day" class="px-4 d-flex flex-row justify-content-between align-items-center">
+                        <p class="date"></p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img id="thirdDayIcon" src="" alt="" class="forecast_weather_icon d-none" />
+                            <p class="details"></p>
+                        </div>
+                    </div>
+                    <div id="fourth_day" class="px-4 d-flex flex-row justify-content-between align-items-center">
+                        <p class="date"></p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img id="fourthDayIcon" src="" alt="" class="forecast_weather_icon d-none" />
+                            <p class="details"></p>
+                        </div>
+                    </div>
+                    <div id="fifth_day" class="px-4 d-flex flex-row justify-content-between align-items-center">
+                        <p class="date"></p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img id="fifthDayIcon" src="" alt="" class="forecast_weather_icon d-none" />
+                            <p class="details"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+
+</html>

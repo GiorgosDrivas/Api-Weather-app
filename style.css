@@ -1,0 +1,86 @@
+body {
+    font-family: 'Anton', sans-serif !important;
+    letter-spacing: 2px;
+    background-color: #FEFCF3 !important;
+}
+
+#result_name {
+    font-size: 60px;
+    line-height: 70px;
+}
+
+#result_main,
+#result_desc {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#input {
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 6px 7px;
+}
+
+#submit {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    right: 9px;
+    bottom: 6px;
+}
+
+#submit svg {
+    width: 19px;
+    height: 26px;
+}
+
+.temperature {
+    font-size: 90px;
+    line-height: 95px;
+}
+
+.single-detail-wrapper {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+#brief {
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.weather_icon,
+.forecast_weather_icon {
+    width: 50px;
+    height: 50px;
+}
+
+.wrap {
+    margin: 70px 0;
+}
+
+.dayWrapperStyle {
+    margin-bottom: 20px;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 0 20px;
+    box-shadow: 1px 1px 10px #000;
+}
+
+.day_wrapper>div:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.day_wrapper>div:first-child {
+    margin-top: 20px;
+}
+
+.main_day_wrapper {
+    padding-bottom: 10px;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid;
+    box-shadow: 1px 1px 5px #000;
+}
